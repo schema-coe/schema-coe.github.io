@@ -198,30 +198,30 @@
  
 
 
-<span class="entry" id="yy26">Y. Du, Y. Huang, and G. Zardini, <a class="entry-title" href="https://arxiv.org/pdf/2606.04850">“Uncertainty-Aware End-to-End Co-Design of Neural Network Processors: From Training and Mapping to Fabrication,”</a> 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('yy26','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('yy26','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
+<span class="entry" id="nagy26ctbuild">Z. Nagy, R. Wisnesky, K. Carlson, E. Subrahmanian, and G. Zardini, <a class="entry-title" href="https://arxiv.org/pdf/2601.16663">“A Categorical Approach to Semantic Interoperability Across Building Lifecycle,”</a> 2026.</span> 
+<p class="infolinks"><a href="javascript:toggleInfo('nagy26ctbuild','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
+	<a href="javascript:toggleInfo('nagy26ctbuild','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
 	
 	
 	
 
 </span>
 </p>
-<span id="bib_yy26" class="bibtex noshow">
-	<pre>@unpublished{yy26,
-  author = {Du, Yuyang and Huang, Yujun and Zardini, Gioele},
-  title = {Uncertainty-Aware End-to-End Co-Design of Neural Network Processors: From Training and Mapping to Fabrication},
+<span id="bib_nagy26ctbuild" class="bibtex noshow">
+	<pre>@unpublished{nagy26ctbuild,
+  author = {Nagy, Zoltan and Wisnesky, Ryan and Carlson, Kevin and Subrahmanian, Eswaran and Zardini, Gioele},
+  title = {A Categorical Approach to Semantic Interoperability Across Building Lifecycle},
   year = {2026},
-  url = {https://arxiv.org/pdf/2606.04850}
+  url = {https://arxiv.org/pdf/2601.16663}
 }
 </pre>
 </span>
-<span id="abs_yy26" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> Designing a neural network processor is an end-to-end co-design problem: network architecture and training budget determine the inference workload; hardware mapping decisions determine chip area, latency, and energy; and these characteristics govern fabrication yield and manufacturing cost. In practice, these decisions are made in separate stages, and existing co-design methodologies are tightly coupled to specific algorithms, making it difficult to improve one component without reworking the entire pipeline. This paper presents a unified framework, grounded in monotone co-design theory, that composes four interoperable design blocks spanning network training, chip mapping, wafer-level fabrication, and compute resource allocation. Each block exposes only a functionality-resource interface to the rest of the system, so any block can be refined without structural changes elsewhere. A central contribution is the treatment of uncertainty: rather than collapsing stochastic outcomes into point estimates, the framework introduces Confidence, the inverse of success probability, as an explicit and optimizable resource alongside cost, time, and power. Three case studies validate the approach. The first recovers Pareto-optimal implementations across heterogeneous application scenarios. The second confirms that Confidence functions as a continuously tunable design knob rather than a post-hoc diagnostic. The third demonstrates that improving a single block’s implementation set automatically propagates to the global Pareto front, without modifying the co-design diagram.</p>
+<span id="abs_nagy26ctbuild" class="abstract noshow" class="gray_bg">
+	<p class="abstract"><b>Abstract:</b> Buildings generate heterogeneous data across their lifecycle, yet integrating these data remains a critical unsolved challenge. Despite three decades of standardization efforts, over 40 metadata schemas now span the building lifecycle, with fragmentation accelerating rather than resolving. Current approaches rely on point-to-point mappings that scale quadratically with the number of schemas, or universal ontologies that become unwieldy monoliths. The fundamental gap is the absence of mathematical foundations for structure-preserving transformations across heterogeneous building data. Here we show that category theory provides these foundations, enabling systematic data integration with O(n) specification complexity for n ontologies. We formalize building ontologies as first-order theories and demonstrate two proof-of-concept implementations in Categorical Query Language (CQL): 1) generating BRICK models from IFC design data at commissioning, and 2) three-way integration of IFC, BRICK, and RealEstateCore where only two explicit mappings yield the third automatically through categorical composition. Our correct-by-construction approach treats property sets as first-class schema entities and provides automated bidirectional migrations, and enables cross-ontology queries. These results establish feasibility of categorical methods for building data integration and suggest a path toward an <i>app ecosystem</i> for buildings, where mathematical foundations enable reliable component integration analogous to smartphone platforms. </p>
 </span>
 
 
-<!-- <span id="key_yy26" >
+<!-- <span id="key_nagy26ctbuild" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -277,8 +277,7 @@
 </pre>
 </span>
 <span id="abs_zhang25fl" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> Safe derivative-free optimization under unknown constraints is a fundamental challenge in modern learning and control. Existing zeroth-order (ZO) methods typically still assume access to a first-order oracle of the constraint functions or restrict attention to convex settings, leaving nonconvex optimization with black-box constraints largely unexplored. We propose the zeroth-order feedback-linearization (ZOFL) algorithm for ZO constrained optimization that enforces feasibility without access to the first-order oracle of the constraint functions and applies to both equality and inequality constraints. The proposed approach relies only on noisy, sample-based gradient estimates obtained via two-point estimators, yet provably guarantees constraint satisfaction under mild regularity conditions. It adopts a control-theoretic perspective on ZO constrained optimization and leverages feedback linearization, a nonlinear control technique, to enforce feasibility. Finite-time bounds on constraint violation and asymptotic global convergence guarantees are established for the ZOFL algorithm. A midpoint discretization variant is further developed to improve feasibility without sacrificing optimality. Empirical results demonstrate that ZOFL consistently outperforms standard ZO baselines, achieving competitive objective values while maintaining feasibility.
-  </p>
+	<p class="abstract"><b>Abstract:</b> Safe derivative-free optimization under unknown constraints is a fundamental challenge in modern learning and control. Existing zeroth-order (ZO) methods typically still assume access to a first-order oracle of the constraint functions or restrict attention to convex settings, leaving nonconvex optimization with black-box constraints largely unexplored. We propose the zeroth-order feedback-linearization (ZOFL) algorithm for ZO constrained optimization that enforces feasibility without access to the first-order oracle of the constraint functions and applies to both equality and inequality constraints. The proposed approach relies only on noisy, sample-based gradient estimates obtained via two-point estimators, yet provably guarantees constraint satisfaction under mild regularity conditions. It adopts a control-theoretic perspective on ZO constrained optimization and leverages feedback linearization, a nonlinear control technique, to enforce feasibility. Finite-time bounds on constraint violation and asymptotic global convergence guarantees are established for the ZOFL algorithm. A midpoint discretization variant is further developed to improve feasibility without sacrificing optimality. Empirical results demonstrate that ZOFL consistently outperforms standard ZO baselines, achieving competitive objective values while maintaining feasibility. </p>
 </span>
 
 
@@ -338,8 +337,7 @@
 </pre>
 </span>
 <span id="abs_caialmton26" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> We propose the Adaptive Levenberg-Marquardt Third-Order Newton Method (ALMTON) for unconstrained nonconvex optimization, providing the first globally convergent realization of the unregularized third-order Newton method. Unlike the standard Adaptive Regularization framework with third-order models (AR3), which enforces global behavior through a quartic term, ALMTON employs an adaptive Levenberg-Marquardt (quadratic) regularization. This choice preserves a cubic model at every iteration, so that every subproblem is a tractable semidefinite program (SDP). In particular, the ALMTON-Simple variant requires exactly one SDP solve per iteration, making the per-iteration cost uniform and predictable.
-  Algorithmically, ALMTON follows a mixed-mode strategy: it attempts an unregularized third-order step whenever the cubic Taylor model admits a strict local minimizer with adequate curvature, and activates (or increases) quadratic regularization only when needed to ensure that the model is well posed and the step is globally reliable. We establish global convergence and prove an O(ϵ−2) worst-case evaluation complexity for computing an ϵ-approximate first-order stationary point. Numerical experiments show that ALMTON enlarges the basin of attraction relative to classical baselines (gradient descent and damped Newton), and can progress on landscapes where second-order methods typically stagnate. When compared with a state-of-the-art third-order implementation (AR3-interp), ALMTON converges more consistently and often in fewer iterations. We also characterize the practical scalability limits of the approach, highlighting the computational bottlenecks introduced by current SDP solvers as dimension grows.</p>
+	<p class="abstract"><b>Abstract:</b> We propose the Adaptive Levenberg-Marquardt Third-Order Newton Method (ALMTON) for unconstrained nonconvex optimization, providing the first globally convergent realization of the unregularized third-order Newton method. Unlike the standard Adaptive Regularization framework with third-order models (AR3), which enforces global behavior through a quartic term, ALMTON employs an adaptive Levenberg-Marquardt (quadratic) regularization. This choice preserves a cubic model at every iteration, so that every subproblem is a tractable semidefinite program (SDP). In particular, the ALMTON-Simple variant requires exactly one SDP solve per iteration, making the per-iteration cost uniform and predictable. Algorithmically, ALMTON follows a mixed-mode strategy: it attempts an unregularized third-order step whenever the cubic Taylor model admits a strict local minimizer with adequate curvature, and activates (or increases) quadratic regularization only when needed to ensure that the model is well posed and the step is globally reliable. We establish global convergence and prove an O(ϵ−2) worst-case evaluation complexity for computing an ϵ-approximate first-order stationary point. Numerical experiments show that ALMTON enlarges the basin of attraction relative to classical baselines (gradient descent and damped Newton), and can progress on landscapes where second-order methods typically stagnate. When compared with a state-of-the-art third-order implementation (AR3-interp), ALMTON converges more consistently and often in fewer iterations. We also characterize the practical scalability limits of the approach, highlighting the computational bottlenecks introduced by current SDP solvers as dimension grows.</p>
 </span>
 
 
@@ -586,127 +584,6 @@
 <!-- <span id="key_max26" >
 	<b>Keywords</b>:
 	
-</span> --></li>
-<li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="meshal26">M. Alharbi, M. A. Dahleh, and G. Zardini, <a class="entry-title" href="https://arxiv.org/pdf/2604.22624">“Compositional Online Learning for Multi-Objective System Co-Design,”</a> 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('meshal26','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('meshal26','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_meshal26" class="bibtex noshow">
-	<pre>@unpublished{meshal26,
-  author = {Alharbi, Meshal and Dahleh, Munther A. and Zardini, Gioele},
-  title = {Compositional Online Learning for Multi-Objective System Co-Design},
-  year = {2026},
-  url = {https://arxiv.org/pdf/2604.22624}
-}
-</pre>
-</span>
-<span id="abs_meshal26" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> Many engineered systems must balance competing objectives, such as performance and safety, cost and reliability, or efficiency and sustainability, and are naturally modeled as compositions of interacting subsystems. We study online multi-objective decision-making in monotone co-design, where functionalities and resources are partially ordered, and the goal is to identify the target-feasible antichain of non-dominated trade-offs using few expensive evaluations. We introduce optimistic evaluators: history-dependent bounds on functionality and resource mappings that enable safe elimination of implementations before full evaluation. Based on these evaluators, we develop an elimination-based rejection-sampling algorithm, prove its soundness, and show that the admissible region shrinks monotonically as information accumulates. We instantiate the framework under monotonicity, Lipschitz continuity, and linear-parametric structure. For compositional co-design problems modeled by multigraphs, we show how local optimistic certificates propagate through the tractable remainder of the graph to yield system-level optimistic feasibility and resource bounds. Experiments on multi-robot fleet design, intermodal mobility systems, and synthetic monotone and Lipschitz benchmarks show substantial sample-efficiency gains over uniform sampling, Bayesian optimization, and multi-objective evolutionary algorithms.</p>
-</span>
-
-
-<!-- <span id="key_meshal26" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="nagy26ctbuild">Z. Nagy, R. Wisnesky, K. Carlson, E. Subrahmanian, and G. Zardini, <a class="entry-title" href="https://arxiv.org/pdf/2601.16663">“A Categorical Approach to Semantic Interoperability Across Building Lifecycle,”</a> 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('nagy26ctbuild','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('nagy26ctbuild','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_nagy26ctbuild" class="bibtex noshow">
-	<pre>@unpublished{nagy26ctbuild,
-  author = {Nagy, Zoltan and Wisnesky, Ryan and Carlson, Kevin and Subrahmanian, Eswaran and Zardini, Gioele},
-  title = {A Categorical Approach to Semantic Interoperability Across Building Lifecycle},
-  year = {2026},
-  url = {https://arxiv.org/pdf/2601.16663}
-}
-</pre>
-</span>
-<span id="abs_nagy26ctbuild" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> Buildings generate heterogeneous data across their lifecycle, yet integrating these data remains a critical unsolved challenge. Despite three decades of standardization efforts, over 40 metadata schemas now span the building lifecycle, with fragmentation accelerating rather than resolving. Current approaches rely on point-to-point mappings that scale quadratically with the number of schemas, or universal ontologies that become unwieldy monoliths. The fundamental gap is the absence of mathematical foundations for structure-preserving transformations across heterogeneous building data. Here we show that category theory provides these foundations, enabling systematic data integration with O(n) specification complexity for n ontologies. We formalize building ontologies as first-order theories and demonstrate two proof-of-concept implementations in Categorical Query Language (CQL): 1) generating BRICK models from IFC design data at commissioning, and 2) three-way integration of IFC, BRICK, and RealEstateCore where only two explicit mappings yield the third automatically through categorical composition. Our correct-by-construction approach treats property sets as first-class schema entities and provides automated bidirectional migrations, and enables cross-ontology queries. These results establish feasibility of categorical methods for building data integration and suggest a path toward an <i>app ecosystem</i> for buildings, where mathematical foundations enable reliable component integration analogous to smartphone platforms.
-  </p>
-</span>
-
-
-<!-- <span id="key_nagy26ctbuild" >
-	<b>Keywords</b>:
-	
 </span> --></li></ol>
           </div>
         </div>
@@ -862,307 +739,6 @@
         <div class="row">
       	  <div class="col-md-12">
           <ol class="bibliography"><li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="lee26">L. Marom, S. Tibbits, G. Zardini, and M. J. Bühler, <a class="entry-title" href="https://arxiv.org/pdf/2604.26367">“A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems,”</a> <i>Journal of the Mechanics and Physics of Solids (In Press)</i>, 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('lee26','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('lee26','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_lee26" class="bibtex noshow">
-	<pre>@article{lee26,
-  author = {Marom, Lee and Tibbits, Skylar and Zardini, Gioele and Bühler, Markus J.},
-  title = {A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems},
-  year = {2026},
-  journal = {Journal of the Mechanics and Physics of Solids (In Press)},
-  url = {https://arxiv.org/pdf/2604.26367}
-}
-</pre>
-</span>
-<span id="abs_lee26" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> Natural materials achieve adaptive behavior through hierarchical organization and coupled mechanisms across scales. Their translation into engineering, however, remains largely heuristic. What is missing is a formal translation framework that carries biological design logic into engineered realization while preserving physical consistency across levels of abstraction. Here we present a category theoretic compositional framework for verified nature-derived design. The framework defines a category of stimulus response dynamical systems with natural and artificial subcategories. It introduces a structure preserving implementation functor from biological mechanics to engineered systems. It also formalizes a machine agnostic specification layer that links behavioral intent to executable fabrication programs. We instantiate the framework on the hygromorphic pinecone hierarchy as a representative biological case. We implement the full pipeline in Grasshopper, where formal specifications are translated into modular parametric scripts that preserve the compositional structure of the model. The resulting designs are fabricated by fused filament fabrication, evaluated experimentally, and tested against model predictions derived from the pipeline. The current implementation generates four actuator classes spanning two stimulus types and two kinematic responses. One actuator arises purely through composition from previously validated components, without additional manual derivation. The results show that compositionality can function not just as a descriptive language, but as a generative and system level verifiable method for mechanical material design. More broadly, the work provides a concrete route for embedding formal multiscale reasoning within increasingly computational, generative, and physics-driven design workflows.</p>
-</span>
-
-
-<!-- <span id="key_lee26" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="JadbabaiePlaceholder2026">A. Jadbabaie, <a class="entry-title" href="">“Placeholder — add Ali Jadbabaie’s publications in pi/jadbabaie.bib,”</a> in <i>SCHEMA Center of Excellence</i>, 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('JadbabaiePlaceholder2026','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('JadbabaiePlaceholder2026','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_JadbabaiePlaceholder2026" class="bibtex noshow">
-	<pre>@inproceedings{JadbabaiePlaceholder2026,
-  author = {Jadbabaie, Ali},
-  title = {Placeholder --- add Ali Jadbabaie's publications in pi/jadbabaie.bib},
-  booktitle = {SCHEMA Center of Excellence},
-  year = {2026}
-}
-</pre>
-</span>
-<span id="abs_JadbabaiePlaceholder2026" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> This is a placeholder entry so the merged list shows every PI. Replace it with real publications.</p>
-</span>
-
-
-<!-- <span id="key_JadbabaiePlaceholder2026" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="MatniPlaceholder2026">N. Matni, <a class="entry-title" href="">“Placeholder — add Nikolai Matni’s publications in pi/matni.bib,”</a> in <i>SCHEMA Center of Excellence</i>, 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('MatniPlaceholder2026','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('MatniPlaceholder2026','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_MatniPlaceholder2026" class="bibtex noshow">
-	<pre>@inproceedings{MatniPlaceholder2026,
-  author = {Matni, Nikolai},
-  title = {Placeholder --- add Nikolai Matni's publications in pi/matni.bib},
-  booktitle = {SCHEMA Center of Excellence},
-  year = {2026}
-}
-</pre>
-</span>
-<span id="abs_MatniPlaceholder2026" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> This is a placeholder entry so the merged list shows every PI. Replace it with real publications.</p>
-</span>
-
-
-<!-- <span id="key_MatniPlaceholder2026" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="PappasPlaceholder2026">G. J. Pappas, <a class="entry-title" href="">“Placeholder — add George J. Pappas’s publications in pi/pappas.bib,”</a> in <i>SCHEMA Center of Excellence</i>, 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('PappasPlaceholder2026','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('PappasPlaceholder2026','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_PappasPlaceholder2026" class="bibtex noshow">
-	<pre>@inproceedings{PappasPlaceholder2026,
-  author = {Pappas, George J.},
-  title = {Placeholder --- add George J. Pappas's publications in pi/pappas.bib},
-  booktitle = {SCHEMA Center of Excellence},
-  year = {2026}
-}
-</pre>
-</span>
-<span id="abs_PappasPlaceholder2026" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> This is a placeholder entry so the merged list shows every PI. Replace it with real publications.</p>
-</span>
-
-
-<!-- <span id="key_PappasPlaceholder2026" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li><script>
-	function myFunction(name) {
-	  var x = document.getElementById(name);
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	function redirect_blank(url) {
-	  var a = document.createElement('a');
-	  a.target = "_blank";
-	  a.href = url;
-	  a.click();
-	}
-
-	.white_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	.gray_bg 
-{
-    background-color: #8b959e;
-    padding: 3px; /*add this if you want a bit of space around the text*/
-}
-
-	</script>
-
- 
-
-
-<span class="entry" id="SVPlaceholder2026">A. Sangiovanni-Vincentelli, <a class="entry-title" href="">“Placeholder — add Alberto Sangiovanni-Vincentelli’s publications in pi/sangiovanni-vincentelli.bib,”</a> in <i>SCHEMA Center of Excellence</i>, 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('SVPlaceholder2026','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('SVPlaceholder2026','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
-	
-	
-	
-
-</span>
-</p>
-<span id="bib_SVPlaceholder2026" class="bibtex noshow">
-	<pre>@inproceedings{SVPlaceholder2026,
-  author = {Sangiovanni-Vincentelli, Alberto},
-  title = {Placeholder --- add Alberto Sangiovanni-Vincentelli's publications in pi/sangiovanni-vincentelli.bib},
-  booktitle = {SCHEMA Center of Excellence},
-  year = {2026}
-}
-</pre>
-</span>
-<span id="abs_SVPlaceholder2026" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> This is a placeholder entry so the merged list shows every PI. Replace it with real publications.</p>
-</span>
-
-
-<!-- <span id="key_SVPlaceholder2026" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li><script>
 	function myFunction(name) {
 	  var x = document.getElementById(name);
 	  if (x.style.display === "none") {
@@ -1443,30 +1019,31 @@
  
 
 
-<span class="entry" id="AmesPlaceholder2026">A. D. Ames, <a class="entry-title" href="">“Placeholder — add Aaron D. Ames’s publications in pi/ames.bib,”</a> in <i>SCHEMA Center of Excellence</i>, 2026.</span> 
-<p class="infolinks"><a href="javascript:toggleInfo('AmesPlaceholder2026','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
-	<a href="javascript:toggleInfo('AmesPlaceholder2026','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
+<span class="entry" id="lee26">L. Marom, S. Tibbits, G. Zardini, and M. J. Bühler, <a class="entry-title" href="https://arxiv.org/pdf/2604.26367">“A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems,”</a> <i>Journal of the Mechanics and Physics of Solids (In Press)</i>, 2026.</span> 
+<p class="infolinks"><a href="javascript:toggleInfo('lee26','bibtex')"><i class="fa fa-quote-right"></i> BibTeX&nbsp &nbsp</a>  
+	<a href="javascript:toggleInfo('lee26','abstract')"><i class="fa fa-align-left"></i> Abstract&nbsp</a>
 	
 	
 	
 
 </span>
 </p>
-<span id="bib_AmesPlaceholder2026" class="bibtex noshow">
-	<pre>@inproceedings{AmesPlaceholder2026,
-  author = {Ames, Aaron D.},
-  title = {Placeholder --- add Aaron D. Ames's publications in pi/ames.bib},
-  booktitle = {SCHEMA Center of Excellence},
-  year = {2026}
+<span id="bib_lee26" class="bibtex noshow">
+	<pre>@article{lee26,
+  author = {Marom, Lee and Tibbits, Skylar and Zardini, Gioele and Bühler, Markus J.},
+  title = {A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems},
+  year = {2026},
+  journal = {Journal of the Mechanics and Physics of Solids (In Press)},
+  url = {https://arxiv.org/pdf/2604.26367}
 }
 </pre>
 </span>
-<span id="abs_AmesPlaceholder2026" class="abstract noshow" class="gray_bg">
-	<p class="abstract"><b>Abstract:</b> This is a placeholder entry so the merged list shows every PI. Replace it with real publications.</p>
+<span id="abs_lee26" class="abstract noshow" class="gray_bg">
+	<p class="abstract"><b>Abstract:</b> Natural materials achieve adaptive behavior through hierarchical organization and coupled mechanisms across scales. Their translation into engineering, however, remains largely heuristic. What is missing is a formal translation framework that carries biological design logic into engineered realization while preserving physical consistency across levels of abstraction. Here we present a category theoretic compositional framework for verified nature-derived design. The framework defines a category of stimulus response dynamical systems with natural and artificial subcategories. It introduces a structure preserving implementation functor from biological mechanics to engineered systems. It also formalizes a machine agnostic specification layer that links behavioral intent to executable fabrication programs. We instantiate the framework on the hygromorphic pinecone hierarchy as a representative biological case. We implement the full pipeline in Grasshopper, where formal specifications are translated into modular parametric scripts that preserve the compositional structure of the model. The resulting designs are fabricated by fused filament fabrication, evaluated experimentally, and tested against model predictions derived from the pipeline. The current implementation generates four actuator classes spanning two stimulus types and two kinematic responses. One actuator arises purely through composition from previously validated components, without additional manual derivation. The results show that compositionality can function not just as a descriptive language, but as a generative and system level verifiable method for mechanical material design. More broadly, the work provides a concrete route for embedding formal multiscale reasoning within increasingly computational, generative, and physics-driven design workflows.</p>
 </span>
 
 
-<!-- <span id="key_AmesPlaceholder2026" >
+<!-- <span id="key_lee26" >
 	<b>Keywords</b>:
 	
 </span> --></li></ol>
