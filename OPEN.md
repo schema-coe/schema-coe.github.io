@@ -1,8 +1,7 @@
 # Open items for the SCHEMA website
 
-This file lists what the website still needs after the pull requests of 2026-09-28, grouped by the people who can supply it.
+This file calls for attention items from each group.
 Each item names the file it concerns.
-Remove an item when it is done, and remove this file when the list is empty.
 
 ## Nikolai Matni's group at Penn
 
@@ -21,8 +20,7 @@ Remove an item when it is done, and remove this file when the list is empty.
 
 ## George Pappas's group at Penn
 
-- Pull request 1 by Charis Stamouli is open against `preview`. Two optional changes: point the `url` fields of `_bibliography/pi/pappas.bib` at the arXiv abstract pages instead of the PDFs, and delete `img/people/AlumniExample.jpg`, which the pull request leaves behind.
-- Nobody else from the group has sent a profile or a publication.
+- Keep updating the people and publications!
 
 ## AFOSR and AFRL
 
@@ -36,10 +34,3 @@ Remove an item when it is done, and remove this file when the list is empty.
   Gioele decides the wording, and the title lines of `_people/matt-klawonn.markdown`, `_people/scott-nivison.markdown` and `_people/jared-culbertson.markdown` follow.
 - Frederick Leve: `img/people/FrederickLeve.jpg` is 341 by 511 pixels and not square. A square photo from Fred, or a crop of the existing one, fixes the list on the People page.
   The phone numbers he sent have no field in the profile template and are not shown.
-
-## The repository itself
-
-- The instructions in `CONTRIBUTING.md` ask for pull requests into `main`, and the repository has no `main` branch. Pull requests target `preview` for now, and `CONTRIBUTING.md` should say so or `main` should be created.
-- No check runs on a pull request. `.github/workflows/pages.yml` runs on push only, and nothing runs `verify_integrity_of_bib_file.py`, which also compares against the missing `origin/main`. A workflow with a `pull_request` trigger would make the promise in `CONTRIBUTING.md` true.
-- `vendor/` with about 28,000 files and the generated `_site/` are tracked. Bundler and Jekyll regenerate both, and the Pages workflow installs the gems itself.
-- The Pages workflow deploys `preview` on every push, so a merge into `preview` publishes at once. A profile with a placeholder photo is visible on the live site as soon as its pull request is merged.
