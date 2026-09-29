@@ -2,7 +2,16 @@
 % SCHEMA bibliography — Nikolai Matni
 % Add your SCHEMA-related publications below in standard BibTeX; they are
 % merged automatically into the full publication list on every build.
-% Only edit YOUR file. Delete the placeholder entry once you add real ones.
+% Only edit YOUR file.
 % Flags:  keywords={sub} submitted · keywords={press} in press · keywords={prep} in prep
 % =====================================================================
 
+@inproceedings{MatniVerhoekTradeoffs2026,
+  author    = {Verhoek, Chris and Matni, Nikolai},
+  title     = {A Quantitative Framework for Navigating Controller Design Tradeoffs under Computational Constraints},
+  booktitle = {2026 IEEE 65th Conference on Decision and Control (CDC), (In Press)},
+  year      = {2026},
+  address   = {Honolulu, Hawaii, USA},
+  url       = {https://arxiv.org/abs/2604.24897},
+  abstract  = {Computational constraints permeate the controller design process, and yet are rarely treated as explicit design constraints. Towards addressing this gap, we propose a quantitative framework that captures the effects of common design approximations, such as model order reduction, temporal discretization, horizon truncation, and solver accuracy, on both controller performance and computational requirements. Our framework highlights that these approximations are tunable parameters within an overall controller design process. By leveraging incremental input-to-state stability, we show that bounding the aggregate effects of these approximations reduces to verifying a design-dependent sector bound on the difference between the deployed policy and an idealized baseline, with stability enforced via a small-gain condition. We operationalize these insights via a Design Meta-Problem in which the performance gap is minimized subject to stability, real-time compute, and timing constraints. Finally, we instantiate the framework on a receding horizon LQR case study, and demonstrate a principled near-optimal navigation of tradeoffs among sampling rate, model order, horizon length, and solver iterations.}
+}
