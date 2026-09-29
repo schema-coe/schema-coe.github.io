@@ -18,6 +18,10 @@ Remove an item when it is done, and remove this file when the list is empty.
 
 - Loreta Arzumanyan: confirm the bio in `_people/loreta-arzumanyan.markdown`, in particular the sentence on her research and its part in SCHEMA.
 - Vincent Abbott: confirm the bio in `_people/vincent-abbott.markdown`, and say whether the program reads "CEE" or "Systems Engineering & CEE".
+<<<<<<< HEAD
+=======
+- Vincent Abbott: `img/people/VincentAbbott.jpg` is 1536 by 2048 pixels, a portrait. A square crop looks better in the list on the People page.
+>>>>>>> ac22c0a (Add Chris Verhoek, Kyle Horton and the CDC 2026 paper for the Matni group)
 
 ## George Pappas's group at Penn
 
