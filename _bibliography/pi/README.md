@@ -23,7 +23,14 @@ Useful `keywords` flags (optional):
 
 ## How the merge works
 
-At build time, `_plugins/merge_bib.rb` concatenates every `*.bib` file in this
-folder into `_bibliography/schema.bib`, which `jekyll-scholar` reads (configured
-in `_config.yml`). The merged file is auto-generated — **do not edit it by hand**
-(it is git-ignored). Entries are sorted by year, most recent first.
+At build time, `_plugins/merge_bib.rb` merges entries from every `*.bib` file in
+this folder into `_bibliography/schema.bib`, which `jekyll-scholar` reads
+(configured in `_config.yml`). The merged file is auto-generated — **do not edit
+it by hand**. Commit your per-PI source file when updating publications.
+
+**Only `zardini.bib` is filtered by grant.** To include an entry from that file,
+add `schema` to its `grants` field:
+
+```bibtex
+  grants = {schema, nsf-career}
+```
