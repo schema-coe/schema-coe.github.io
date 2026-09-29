@@ -1,0 +1,23 @@
+services:
+  jekyll:
+    build: .
+    init: true
+    environment:
+      JEKYLL_ENV: development
+    ports:
+      - "127.0.0.1:4000:4000"
+      - "127.0.0.1:35729:35729"
+    volumes:
+      # Host edits appear immediately, while builds cannot modify the checkout.
+      - type: bind
+        source: .
+        target: /srv/jekyll
+        read_only: true
+      # The existing merger writes schema.bib here. Keep that generated file in
+      # memory, then mount the editable PI inputs back into the temporary folder.
+      - type: tmpfs
+        target: /srv/jekyll/_bibliography
+      - type: bind
+        source: ./_bibliography/pi
+        target: /srv/jekyll/_bibliography/pi
+        read_only: true

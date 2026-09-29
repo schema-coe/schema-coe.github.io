@@ -5,20 +5,19 @@
 # The merged schema.bib is generated at build time and should NOT be edited by hand
 # (it is listed in .gitignore).
 #
-# Grant tagging: an entry may carry a custom `grants` field listing every grant
-# that supported the work, comma- or semicolon-separated, e.g.:
+# Grant tagging in zardini.bib: an entry may carry a custom `grants` field
+# listing every grant that supported the work, comma- or semicolon-separated:
 #
 #   @article{someKey2026,
 #     ...
 #     grants = {schema, nsf-career, afosr-yfa}
 #   }
 #
-# Only entries whose `grants` field includes "schema" (case-insensitive) are
-# kept in the merged schema.bib. The `grants` field itself is then stripped
-# from the copy that gets written out, so it never appears in jekyll-scholar's
-# "bibtex" popup (which just dumps the entry's fields). Entries with no
-# `grants` field at all (e.g. the placeholder stubs) are dropped -- add
-# grants = {schema} to a placeholder if you want it to keep showing up.
+# Only zardini.bib is filtered: its entries must include "schema" in `grants`
+# (case-insensitive). All entries from other PI files are included, regardless
+# of their grant tags. The `grants` field is stripped from every generated copy
+# so it never appears in jekyll-scholar's "bibtex" popup. Original PI files
+# are left unchanged.
 
 require 'bibtex'
 
@@ -27,8 +26,9 @@ module Schema
     priority :highest
     safe false
 
-    REQUIRED_GRANT = 'schema'
-    GRANT_FIELD    = :grants
+    FILTERED_BIBLIOGRAPHY = 'zardini.bib'
+    REQUIRED_GRANT       = 'schema'
+    GRANT_FIELD          = :grants
 
     def generate(site)
       pi_dir   = File.join(site.source, '_bibliography', 'pi')
@@ -53,19 +53,20 @@ module Schema
       end
 
       File.write(out_file, merged)
-      Jekyll.logger.info "SCHEMA:", "merged #{total_kept} schema-tagged entr#{total_kept == 1 ? 'y' : 'ies'} " \
+      Jekyll.logger.info "SCHEMA:", "merged #{total_kept} entr#{total_kept == 1 ? 'y' : 'ies'} " \
                                      "from #{files.size} PI bib file(s) -> _bibliography/schema.bib"
     end
 
     private
 
-    # Parses one PI bib file and returns the entries tagged with the
-    # required grant, each returned as a copy with the grants field removed.
+    # Filters grant tags only for zardini.bib, then returns copies of the
+    # included entries with the grants field removed.
     def schema_entries(path)
       bib = BibTeX.open(path)
+      entries = bib.select { |object| object.is_a?(BibTeX::Entry) }
+      entries.select! { |entry| schema_tagged?(entry) } if File.basename(path) == FILTERED_BIBLIOGRAPHY
 
-      bib.select { |object| object.is_a?(BibTeX::Entry) && schema_tagged?(object) }
-         .map { |entry| strip_grants(entry) }
+      entries.map { |entry| strip_grants(entry) }
     rescue BibTeX::ParseError => e
       Jekyll.logger.warn "SCHEMA:", "failed to parse #{path}: #{e.message}"
       []
