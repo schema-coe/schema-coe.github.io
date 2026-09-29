@@ -8,6 +8,18 @@ Built with Jekyll + jekyll-scholar, hosted on GitHub Pages (thanks to the origin
 
 See **[CONTRIBUTING.md](CONTRIBUTING.md)** for step-by-step instructions for center members (publications, profiles, news, and the pull-request workflow).
 
+## Local preview with Docker
+
+Install and start [Docker Desktop](https://www.docker.com/products/docker-desktop/) (using Linux containers), or Docker Engine with the Compose plugin on Linux. No local Ruby installation is needed.
+
+From this repository's root, run:
+
+```sh
+docker compose up --build
+```
+
+Open **http://localhost:4000**. Edit files in your usual editor; Jekyll rebuilds and LiveReload refreshes the browser. Restart with `docker compose restart` after changing `_config.yml`. Stop with Ctrl+C, then `docker compose down` to remove the container.
+
 ## Editing content
 
 - **Pages:** `index.md` (home layout in `_layouts/home.html`), `Research.html` (Vision), `People.html`, `events.html`, `Publications.html`, `news.html`.

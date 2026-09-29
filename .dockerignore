@@ -1,0 +1,15 @@
+.git
+.github
+.agents
+.codex
+.bundle
+.pixi
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+.DS_Store
+.env
+.env.*
+_site
+vendor
+_bibliography/schema.bib

@@ -37,6 +37,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _site
+  - _bibliography/schema.bib
+  - Dockerfile
+  - compose.yaml
 plugins:
   - jekyll-redirect-from
 
